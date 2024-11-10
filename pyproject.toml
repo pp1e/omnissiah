@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "omnissiah"
+version = "0.1.0"
+description = ""
+authors = ["Denis <malyutin.02@bk.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "*"
+scikit-learn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
