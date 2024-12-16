@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "omnissiah"
+name = "omnissiah-server"
 version = "0.1.0"
 description = ""
 authors = ["Denis <malyutin.02@bk.ru>"]
@@ -7,13 +7,14 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-pandas = "*"
-scikit-learn = "*"
-matplotlib = "*"
-seaborn = "*"
-jupyter = "^1.1.1"
+fastapi = "*"
+uvicorn = "*"
 joblib = "*"
-
+pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+python-multipart = "*"
+jinja2 = "*"
 
 [build-system]
 requires = ["poetry-core"]

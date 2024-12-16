@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результаты предсказания</title>
+</head>
+<body>
+    <h1>Результаты</h1>
+    {% if error %}
+        <p style="color: red;">Ошибка: {{ error }}</p>
+    {% else %}
+        <ul>
+            {% for prediction in predictions %}
+                <li>{{ prediction }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <a href="/">Назад</a>
+</body>
+</html>
